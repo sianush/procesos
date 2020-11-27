@@ -1,0 +1,57 @@
+body{
+    background: rgb(110, 150, 160);
+}
+
+.contenedor {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    margin: 5em auto;
+    perspective: 700px;
+}
+
+.cubo,
+.caras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.cubo{
+    transform-style: preserve-3d;
+    animation: giracubo 5s ;
+   
+    
+}
+
+@keyframes giracubo {
+    from {
+        transform: rotateY(0);
+    }
+
+    to {
+        transform: rotateY(-90deg);
+    }
+}
+
+
+
+#uno{
+    transform: translateZ(175px);
+    border-radius: 10px;
+    background:  -webkit-linear-gradient(bottom,  #9FCDD3, #0D5768, #7D1043);
+    /* background-image: url(https://i.ibb.co/hFV4x4X/cubo-menu.png);
+    background-size:100% 100% ; */
+
+}
+
+ 
+
+#dos{
+    /* background: linear-gradient(35deg, #f96711, #8a0f47); */
+    transform: translateX(175px) rotateY(90deg);
+    border-radius: 10px;
+    background:  -webkit-linear-gradient(top,  #9FCDD3, #0D5768, #7D1043);
+    /* background-image: url(https://i.ibb.co/8jpZQyH/completo-logo.png);
+    background-size:100% 100% ; */
+
+}
